@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.hasanatasoy.iamat.Utillity.DynamicImageView
+        android:id="@+id/profile_PP"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/profileImageSize"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/profildeneme"/>
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensas"
+        android:text="Kullanıcı adı"
+        android:textColor="@color/profileUsername"
+        android:textSize="@dimen/profileUsernameTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/profile_bioBody"
+        app:layout_constraintEnd_toEndOf="@+id/profile_PP"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/profile_PP"
+        app:layout_constraintTop_toTopOf="@+id/profile_PP"
+        app:layout_constraintVertical_bias="0.100000024"
+        tools:layout_ed1itor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensas"
+        android:text="Hasan Atasoy"
+        android:textColor="#fffffd"
+        android:textSize="@dimen/profileNameTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_PP"
+        app:layout_constraintEnd_toEndOf="@+id/profile_PP"
+        app:layout_constraintStart_toStartOf="@+id/profile_PP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_depcription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensas"
+        android:text="Software Engineering Student"
+        android:textColor="#e2e7e3"
+        android:textSize="@dimen/profileDescriptionTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/profile_voice"
+        android:layout_width="@dimen/profileButtonSizeWidth"
+        android:layout_height="@dimen/profileButtonSizeHeight"
+        android:background="@drawable/profile_button_corners2"
+        android:drawableLeft="@drawable/ic_voice_profile"
+        android:padding="@dimen/profileVoiceButtonIconPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_depcription"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <Button
+        android:id="@+id/profile_send"
+        android:layout_width="@dimen/profileButtonSizeWidth"
+        android:layout_height="@dimen/profileButtonSizeHeight"
+        android:background="@drawable/profile_button_corners"
+        android:drawableLeft="@drawable/ic_send"
+        android:padding="@dimen/profileButtonIconPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_PP"
+        app:layout_constraintEnd_toStartOf="@+id/profile_voice"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/profile_voice"
+        app:layout_constraintTop_toBottomOf="@+id/profile_depcription"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/profile_bioBody"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profileBodyLayoutSize"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_PP">
+
+        <LinearLayout
+            android:id="@+id/profile_biolayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_PP">
+
+            <TextView
+                android:id="@+id/profile_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Bio"
+                android:textSize="@dimen/profileBioTextSize"
+                android:textColor="#c5c5c5" />
+
+            <TextView
+                android:id="@+id/profile_biodescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/profileBioDescriotionTextSize"
+                android:textColor="#767676" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_photosAndLikesLAyout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_biolayout"
+            app:layout_constraintTop_toBottomOf="@+id/profile_PP">
+
+            <LinearLayout
+                android:id="@+id/profile_photosLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profilePhotosAndLikesLayoutSize"
+                android:weightSum="2"
+                android:background="#f1f1f1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile_photosText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:fontFamily="@font/opensas"
+                    android:text="@string/profile_photos"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/profilePhotosTextSize" />
+
+                <TextView
+                    android:id="@+id/profile_photosCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:fontFamily="@font/opensas"
+                    android:text="@string/profile_photos_default_count"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/profilePhotosCountTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_likesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profilePhotosAndLikesLayoutSize"
+                android:weightSum="2"
+                android:background="#e4e4e4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile_likesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:fontFamily="@font/opensas"
+                    android:text="@string/profile_likes"
+                    android:textColor="#aeaeae"
+                    android:textSize="@dimen/profilePhotosTextSize"
+                     />
+
+                <TextView
+                    android:id="@+id/profile_likesCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:fontFamily="@font/opensas"
+                    android:text="@string/profile_likes_default_count"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/profilePhotosCountTextSize"
+                     />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/profile_bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/bottom_nav_menu_view" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profile_post_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/profile_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_bioBody" >
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/profile_settings"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_settings2"
+        app:layout_constraintBottom_toTopOf="@+id/profile_bioBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+</android.support.constraint.ConstraintLayout>

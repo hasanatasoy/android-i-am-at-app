@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundBlue">#88d0ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hint">#9E9E9E</color>
+    <color name="black">#000000</color>
+    <color name="grey">#e5e5e5</color>
+    <color name="onItemSelected">#0277BD</color>
+    <color name="backgroundWhite">#FFFFFF</color>
+    <color name="edittextBackground">#F5F5F5</color>
+    <color name="profileUsername">#e5e6e1</color>
+    <color name="green">#00FF00</color>
+    <color name="greyEffectColor">#424242</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="snowWhite">#FFFAFA</color>
+</resources>
+    <!-- res/color -->
+

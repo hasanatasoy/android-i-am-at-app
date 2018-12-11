@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IamAt</string>
+    <string name="edittextusername"><font size="12" style="Normal">Kullanıcı Adı</font></string>
+    <string name="edittextpassword"><font size="12" style="Normal">Şifre</font></string>
+    <string name="edittextemail"><font size="12" style="Normal">Email</font></string>
+    <string name="logintext"><font size = "15" style="Normal">Giriş Yap</font></string>
+    <string name="registertext"><font size = "15" style="Normal">Kaydol</font></string>
+
+    <!-- toolbar -->
+    <string name="inAppLogo"><font size="17" style="Normal">i am at</font></string>
+
+
+    <!-- profile strings -->
+    <string name="profile_photos">Fotoğraflar</string>
+    <string name="profile_photos_default_count">0</string>
+    <string name="profile_likes">Beğenmeler</string>
+    <string name="profile_likes_default_count">0</string>
+
+    <!-- post detail page -->
+    <string name="post_detail_photo">Fotoğraf</string>
+    <string name="post_rapor_report">Rapor Et</string>
+
+    <!-- anim -->
+    <string name="animDuration">1</string>
+
+    <!-- Camera -->
+    <string name="tabItemGallery" size="12dp" >Galeri</string>
+    <string name="tabItemPhoto" size="12dp" >Fotoğraf</string>
+
+
+</resources>

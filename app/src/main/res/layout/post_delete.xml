@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/settings_message_corner">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/post_settings_delete_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Silmeyi Onayla"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/post_settings_margin_top"
+            android:layout_marginLeft="@dimen/post_settings_margin_left"
+            android:layout_marginRight="@dimen/post_settings_margin_right"
+            android:textSize="@dimen/post_settings_delete_text1"/>
+
+        <TextView
+            android:id="@+id/post_settings_delete_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silmek istiyor musunuz?"
+            android:layout_marginTop="7dp"
+            android:textSize="@dimen/post_settings_delete_text2"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/post_settings_delete_deletePost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/post_settings_button_size"
+            android:text="Sil"
+            android:textSize="@dimen/post_settings_delete_deletePost"
+            android:textColor="@color/backgroundBlue"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/ubuntu"/>
+
+        <Button
+            android:id="@+id/post_settings_delete_dontDeletePost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/post_settings_button_size"
+            android:text="Silme"
+            android:textSize="@dimen/post_settings_delete_deletePost"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/ubuntu"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

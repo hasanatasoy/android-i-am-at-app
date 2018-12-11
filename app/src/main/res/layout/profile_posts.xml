@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profilePostImageSize"
+    android:layout_margin="1dp">
+    <com.hasanatasoy.iamat.Utillity.DynamicImageView
+        android:id="@+id/profile_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+</android.support.constraint.ConstraintLayout>

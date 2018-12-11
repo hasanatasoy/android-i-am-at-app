@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="bottomNavMenuHeight">43dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">40dp</dimen>
+
+    <dimen name="toolbar_height" tools:override="true">155dp</dimen>
+    <!-- >>>>>>>>>>>>>>>>>>>> PROFILE VIEW >>>>>>>>>>>>>>>>>>>>> -->
+    <dimen name="profileImageSize">202dp</dimen>
+    <dimen name="profileButtonSizeWidth">90dp</dimen>
+    <dimen name="profileButtonSizeHeight">40dp</dimen>
+    <dimen name="profileNameTextSize">20dp</dimen>
+    <dimen name="profileDescriptionTextSize">14dp</dimen>
+    <dimen name="profileUsernameTextSize">14dp</dimen>
+    <dimen name="profileBioTextSize">14dp</dimen>
+    <dimen name="profilePhotosTextSize">12dp</dimen>
+    <dimen name="profilePhotosCountTextSize">16dp</dimen>
+    <dimen name="profileBioDescriotionTextSize">14dp</dimen>
+    <dimen name="profilePostImageSize">110dp</dimen>
+    <dimen name="profileButtonIconPadding">35dp</dimen>
+    <dimen name="profileVoiceButtonIconPadding">20dp</dimen>
+    <dimen name="profilePhotosAndLikesLayoutSize">75dp</dimen>
+    <dimen name="profileBodyLayoutSize">150dp</dimen>
+    <!-- >>>>>>>>>>>>>>>>>>>> POST VIEW (HOME) >>>>>>>>>>>>>>>>>>>>> -->
+    <dimen name="postUsernameImageSize">40dp</dimen>
+    <dimen name="postTextSize">12dp</dimen>
+    <dimen name="postSettingsSize">25dp</dimen>
+    <dimen name="postImageSize">300dp</dimen>
+    <dimen name="postLikeImgSize">30dp</dimen>
+    <!-- >>>>>>>>>>>>>>>>>>>>>> Camera View >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <dimen name="camera_textureview_Size">400dp</dimen>
+    <dimen name="camera_photo_edit_recyclerviewSize">100dp</dimen>
+    <dimen name="cameraTabMenuSize">50dp</dimen>
+    <dimen name="gallery_image_size">170dp</dimen>
+    <dimen name="editPhotoShareTextSize">15dp</dimen>
+    <dimen name="camera_photo_edit_photo_done">25dp</dimen>
+    <!-- >>>>>>>>>>>>>>>>>>>> POST DELETE >>>>>>>>>>>>>>>>>>>>>>>>>< -->
+    <dimen name="post_settings_delete_text1">15dp</dimen>
+    <dimen name="post_settings_delete_text2">10dp</dimen>
+    <dimen name="post_settings_delete_deletePost">12sp</dimen>
+    <dimen name="post_settings_margin_top">15dp</dimen>
+    <dimen name="post_settings_margin_left">45dp</dimen>
+    <dimen name="post_settings_margin_right">45dp</dimen>
+    <dimen name="post_settings_button_size">50dp</dimen>
+    <!-- SETTINGS -->
+    <dimen name="settings_view_size">15sp</dimen>
+    <dimen name="settings_View_margin">7dp</dimen>
+
+
+</resources>

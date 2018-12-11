@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/settings_message_corner"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/post_settings_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/settings_View_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/ubuntu"
+            android:text="Paylaş"
+            android:textSize="@dimen/settings_view_size"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/post_settings_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/settings_View_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/ubuntu"
+            android:text="Düzenle"
+            android:textSize="@dimen/settings_view_size"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/post_settings_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/settings_View_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/ubuntu"
+            android:text="Sil"
+            android:textSize="@dimen/settings_view_size"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
